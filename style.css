@@ -1,0 +1,20 @@
+body{
+	background-image: url(http://wallpapercave.com/wp/ipQZEak.jpg);
+	background-size:cover;
+}
+
+label{
+	color:orange;
+}
+
+h1{
+	color:orange;
+	text-align:center;
+	font-size:60px;
+}
+
+button{
+	margin-left:20px;
+	padding-left:5px 20px;
+}
+

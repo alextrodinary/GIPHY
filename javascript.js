@@ -1,16 +1,16 @@
 $(function(){
   addTeam(nbaTeams, 'searchButton', '#buttons');
-  console.log("hi");
+  console.log("does this work?");
 })
 
-  var nbaTeams = ['lakers','spurs','warriors'];
+  var nbaTeams = ['lakers','spurs','warriors','basketball','nike','under armour','jordan', 'phil jackson','kevin durant','kobe'];
 
   function addTeam(nbaTeams,classToAdd,areaToAdd){
     $(areaToAdd).empty();
     for(var i=0;i<nbaTeams.length;i++){
       var a = $('<button>');
       a.addClass(classToAdd);
-      a.attr('data-type', nbaTeams[i])
+      a.attr('data-type', nbaTeams[i]);
       a.text(nbaTeams[i]);
       $(areaToAdd).append(a);
 
@@ -62,7 +62,7 @@ $(document).on('click', '.searchImage',function(){
 
       $('#addSearch').on('click', function(){
         var newSearch = $('input').val();
-        nbateams.push(newSearch);
+        nbaTeams.push(newSearch);  //make sure you spell correctly. nbateams should be nbaTeams
         addTeam(nbaTeams, 'searchButton', '#buttons');
         return false;
       })
